@@ -7,7 +7,8 @@ module.exports = {
       serif: ["Merriweather", "serif"],
     },
     backgroundImage: {
-      "hero-pattern": "url('/public/static/png/hero-img.jpg')",
+      "hero-pattern":
+        "url('https://res.cloudinary.com/qribcom/image/upload/v1632078586/Test-random/hero-img_u4locn.jpg')",
     },
     extend: {},
   },

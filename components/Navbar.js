@@ -18,7 +18,7 @@ const Navbar = ({showSidebar}) => {
 
 
           <div>
-            <buton type="button" className="px-3 py-1.5 md:px-10 md:py-5 rounded-full bg-white ring-1 ring-black">Login</buton>
+            <buton type="button" className="px-3 py-1.5 md:px-10 md:py-5 rounded-full bg-white filter shadow-lg ">Login</buton>
           </div>
         </div>
 

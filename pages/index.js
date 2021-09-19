@@ -5,6 +5,7 @@ import Navbar from "../components/Navbar";
 import { useState } from "react";
 import { Transition } from '@headlessui/react';
 import Overlay from 'components/Overlay';
+import Features from 'components/homepage/Features';
 
 export default function index() {
 
@@ -17,10 +18,10 @@ export default function index() {
     <Layout>
       <div className="min-h-screen w-screen overflow-hidden relative">
         <div
-          className="bg-center bg-no-repeat bg-yellow-100"
-          styles={{
-            backgroundImage: `url(${image.background})`,
-          }}
+          className="overflow-hidden"
+          // style={{
+          //   backgroundImage: `url('https://res.cloudinary.com/qribcom/image/upload/v1632078586/Test-random/hero-img_u4locn.jpg')`,
+          // }}
         >
           <Navbar showSidebar={showSidebar} />
           <div className="top-0 z-10 fixed">
@@ -36,7 +37,7 @@ export default function index() {
                 <Overlay sidebar={sidebar} showSidebar={showSidebar} />
               </Transition.Child>
               <Transition.Child
-                enter="transition ease-in-out duration-700 transform"
+                enter="transition ease-in-out duration-300 transform"
                 enterFrom="-translate-x-full"
                 enterTo="transalate-x-0"
                 leave="transition-opacity ease-in-out duration-700 transform"
@@ -49,6 +50,9 @@ export default function index() {
             </Transition>
           </div>
           <Hero className="z-0" />
+        </div>
+        <div className="py-10">
+          <Features />
         </div>
       </div>
     </Layout>
