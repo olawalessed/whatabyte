@@ -22,7 +22,7 @@ export default function Features() {
                               <h3 className="text-3xl font-black">{item.title}</h3>
                             </div>
                             <div>
-                              <p className="underline cursor-pointer text-base">
+                              <p className="underline cursor-pointer text-lg">
                                 {item.link}
                               </p>
                             </div>
@@ -49,14 +49,14 @@ export const featureDetails = [
   {
     key: 2,
     title: "Your passion to business",
-    link: "Start delivering food",
+    link: "Register your restaurant",
     image:
       "https://res.cloudinary.com/qribcom/image/upload/v1632080765/Test-random/cooking-man.jpg",
   },
   {
     key: 3,
     title: "Deliver with whatabyte",
-    link: "Register your restaurant",
+    link: "Start delivering food",
     image:
       "https://res.cloudinary.com/qribcom/image/upload/v1632080090/Test-random/delivery-service.jpg",
   },

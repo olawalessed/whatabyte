@@ -6,6 +6,7 @@ import { useState } from "react";
 import { Transition } from '@headlessui/react';
 import Overlay from 'components/Overlay';
 import Features from 'components/homepage/Features';
+import Locator from '../components/homepage/Locator'
 
 export default function index() {
 
@@ -51,8 +52,13 @@ export default function index() {
           </div>
           <Hero className="z-0" />
         </div>
+        {/* Features section */}
         <div className="py-10">
           <Features />
+        </div>
+        {/* Restaraunts and Whatabyte Service location */}
+        <div className="py-10">
+          <Locator />
         </div>
       </div>
     </Layout>
