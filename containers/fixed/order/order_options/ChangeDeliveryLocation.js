@@ -10,8 +10,7 @@ import { Icon } from "semantic-ui-react";
 
 export default function ChangeDeliveryLocation() {
 
-  const access_token =
-    "pk.eyJ1Ijoib2xhd2FsZXNzZWQiLCJhIjoiY2t1OHJyczgzMTRjbzJ1bzdwdnMzbGM1aCJ9.1hjr0EXxll1L55Srpm_apg";
+  const access_token = process.env.MAPBOX_API_TOKEN;
   
   
   const [state, setState] = useState({
@@ -29,7 +28,7 @@ export default function ChangeDeliveryLocation() {
           signal: controller.signal,
         });
         if (res.status === 200) {
-          console.log(res);
+          // console.log(res);
           setState({loading: false})
           setState(
             {search_result: res.data}
@@ -38,7 +37,7 @@ export default function ChangeDeliveryLocation() {
         // console.log("Browser is connected with text of", state.search_text )
       }
     } catch (err) {
-      console.log(err)
+      // console.log(err)
     }
   
     return () => {
@@ -61,10 +60,10 @@ export default function ChangeDeliveryLocation() {
     // })
   }
 
-  console.log("State value should be here", state.search_result)
+  // console.log("State value should be here", state.search_result)
   const { features } = state.search_result || ""
   
-  console.log(features)
+  // console.log(features)
   
   
   // const res = await axios(api,)

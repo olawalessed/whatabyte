@@ -1,7 +1,7 @@
 
 import CategoryInLine from "@/containers/feed/CategoryInLine";
 import FeedSlider from "@/containers/feed/FeedSlider";
-import Filter from "@/containers/feed/Filter";
+import Filter from "@/containers/feed/filterCategory/Filter";
 import HomeFeed from "@/containers/feed/HomeFeed";
 import NavbarSecondary from "layout/child/NavbarSecondary";
 import Layout from "../layout/Layout";

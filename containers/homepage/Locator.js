@@ -41,7 +41,6 @@ export default function Features() {
           setLng(lng)
           setViewport({ ...viewport, latitude: lat, longitude: lng })
           setLoading(false)
-          console.log(lat, lng);
         }
       },
       (error) => {
@@ -57,8 +56,8 @@ export default function Features() {
   
   if (loading) return false
 
-  console.log(lat, lng)
-  console.log(process.env.GOOGLE_MAP_API_KEY)
+  
+  
 
 
     return (
