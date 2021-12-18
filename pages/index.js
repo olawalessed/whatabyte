@@ -1,12 +1,12 @@
-import SideMenu from 'components/SideMenu';
-import Hero from '../components/homepage/Hero'
-import Layout from '../components/Layout'
-import Navbar from "../components/Navbar";
+import SideMenu from '@/containers/fixed/SideMenu';
+import Hero from '../containers/homepage/Hero'
+import Layout from '../layout/Layout'
+import Navbar from "../layout/child/Navbar";
 import { useState } from "react";
 import { Transition } from '@headlessui/react';
-import Overlay from 'components/Overlay';
-import Features from 'components/homepage/Features';
-import Locator from '../components/homepage/Locator'
+import Overlay from '@/containers/fixed/Overlay';
+import Features from 'containers/homepage/Features';
+import Locator from '../containers/homepage/Locator'
 
 export default function index() {
 

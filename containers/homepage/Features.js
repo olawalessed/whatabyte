@@ -6,9 +6,9 @@ export default function Features() {
         <div className="w-screen py-5 px-20 overflow-hidden">
           <div className="flex justify-between gap-5">
             {/* Loop through here */}
-                    {featureDetails.map((item) => {
+                    {featureDetails.map((item, i) => {
                         return (
-                          <div key={item.key} className="flex-col">
+                          <div key={i} className="flex-col">
                             <div>
                               <Image
                                 src={item.image}

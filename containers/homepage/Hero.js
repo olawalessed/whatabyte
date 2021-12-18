@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Dropdown, Icon } from "semantic-ui-react";
 
 export default function Hero() {
@@ -45,8 +46,10 @@ export default function Hero() {
         </div>
         <div className="py-5">
           <p className="text-left text-xl">
-            <a className="underline cursor-pointer">Sign In</a> to continue
-            where you left
+            <Link href="/account/login">
+              <a className="underline cursor-pointer">Sign In</a>
+            </Link>
+            to continue where you left
           </p>
         </div>
       </div>

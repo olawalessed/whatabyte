@@ -1,10 +1,11 @@
+import Layout from "layout/Layout"
 
-import Layout from '../components/Layout'
+
 
 const ExploreView = props => 
 
 <Layout>
-    
+    <h1>Explore Page</h1>
 </Layout>
 
 export default ExploreView

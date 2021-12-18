@@ -1,12 +1,12 @@
 import Head from 'next/head'
-import Footer from './Footer'
+import Footer from './child/Footer'
 
 
 
 export default function Layout({children}) {
     return (
       
-        <div className="container">
+        <div className="w-screen">
           
             <Head>
               <title>Whatabyte</title>

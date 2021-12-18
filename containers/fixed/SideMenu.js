@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import logo from '../public/static/whatabyte-logo.svg'
+import logo from "../../public/static/whatabyte-logo.svg";
 
 
 export default function SideMenu({sidebar}) {

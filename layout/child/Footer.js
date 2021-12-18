@@ -1,10 +1,10 @@
 import Image from "next/image";
 import { Icon } from "semantic-ui-react";
-import logo from '../public/static/whatabyte-logo.svg'
+import logo from '../../public/static/whatabyte-logo.svg'
 
 export default function Footer() {
     return (
-      <div>
+      <div className="mt-40">
         <div className="w-screen bg-black py-20 overflow-hidden">
           <div className="flex-col gap-x-10 relative">
             <div className="flex justify-around space-x-5 text-white px-20">
