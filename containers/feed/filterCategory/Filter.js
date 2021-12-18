@@ -2,7 +2,7 @@
 import { RadioGroup } from "@headlessui/react";
 import { useEffect, useLayoutEffect, useRef } from "react";
 import { Accordion, Form, Icon, Radio } from "semantic-ui-react";
-import styles from '../../styles/Slider.module.css'
+import styles from "../../../styles/Slider.module.css";
 import RadioFilterOptions from "./RadioFilterOptions";
 
 

@@ -36,7 +36,7 @@ export default function NearMeView() {
     //     }
     // ])
     
-    console.log(modalState)
+    // console.log(modalState)
     
     
     const handleInitialModalDispatch = (action) => {
