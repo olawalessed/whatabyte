@@ -6,7 +6,7 @@ import Footer from './child/Footer'
 export default function Layout({children}) {
     return (
       
-        <div className="w-screen">
+        <div className="">
           
             <Head>
               <title>Whatabyte</title>

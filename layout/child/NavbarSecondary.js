@@ -87,12 +87,12 @@ export default function NavbarSecondary({ showSidebar, }) {
   return (
     <div
       className={
-        enabled ? `sticky top-0 bg-white z-10` : console.log("not there yet")
+        enabled ? `sticky top-0 bg-white z-10` : null
       }
     >
-      <div className="flex w-screen items-center justify-between overflow-hidden py-5 md:py-5 px-2 md:px-10">
+      <div className="flex h-20 bg-slate-300 w-screen items-center justify-between overflow-hidden py-5 md:py-5 px-2 md:px-10">
         <div>
-          <Icon name="bars" size="large" onClick={showSidebar} />
+          <Icon name="bars" size="large" onClick={() => showSidebar} />
         </div>
 
         {/* Logo */}
@@ -124,10 +124,10 @@ export default function NavbarSecondary({ showSidebar, }) {
           <div className="px-2 relative flex items-center border-b-2 border-black">
             <input
               type="search"
-              className="py-2.5 px-7 text-lg outline-none border-none"
+              className="py-2.5 text-lg outline-none border-none bg-slate-300"
               placeholder="Search favorites"
             />
-            <Icon name="search" size="large" className="absolute left-0" />
+            <Icon name="search" size="large" className="absolute -left-6" />
           </div>
         </div>
 
@@ -150,7 +150,7 @@ export default function NavbarSecondary({ showSidebar, }) {
           </button>
         </div>
       </div>
-      <div ref={dropDownCartRef} onBlur={closeCartDropdown}>
+      <div ref={dropDownCartRef} >
         {showCart ? <DropDownCart /> : null}
       </div>
 

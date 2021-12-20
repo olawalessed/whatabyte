@@ -11,7 +11,7 @@ import { Icon } from "semantic-ui-react";
 export default function ChangeDeliveryLocation() {
 
   const access_token = process.env.MAPBOX_API_TOKEN;
-  
+  console.log(access_token)
   
   const [state, setState] = useState({
     search_text: "",

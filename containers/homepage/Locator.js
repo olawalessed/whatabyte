@@ -74,7 +74,7 @@ export default function Features() {
                 mapboxApiAccessToken={process.env.MAPBOX_API_TOKEN}
                 onViewportChange={(vp) => setViewport(vp)}
               >
-                <GeolocateControl
+                 <GeolocateControl
                   style={geolocateControlStyle}
                   positionOptions={{ enableHighAccuracy: true }}
                   trackUserLocation={true}

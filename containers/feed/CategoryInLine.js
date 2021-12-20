@@ -5,7 +5,7 @@ import Image from "next/image"
 export default function CategoryInLine() {
     return (
       <div className="my-12 z-0 overflow-hidden">
-        <div className="grid grid-cols-12 justify-center items-center gap-1.5 pl-10 pr-20 mx-auto">
+        <div className="grid grid-cols-12 justify-center items-center gap-1.5 px-10 mx-auto">
           {counter.map((item, i) => {
             return (
               <div key={i} className="flex-col text-center">
