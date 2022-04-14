@@ -1,0 +1,75 @@
+const actionType = {
+        INITIAL: 'INITIAL',
+        CHANGE: 'CHANGE',
+        SCHEDULE: 'SCHEDULE'
+    }
+
+
+    
+    const reducer = (state, action) => {
+        switch (action.type) {
+            case actionType.INITIAL:
+                return 'Initial'
+            case actionType.CHANGE:
+                return 'Change'
+            case actionType.SCHEDULE:
+                return 'Schedule'
+            default:
+                state 
+        }
+    }
+
+    const [modalState, dispatch] = useReducer(reducer, 'Initial')
+    
+    // const [items, dispatch] = useReducer(reducer, [
+    //     {
+    //         name: "Lagos",
+    //         title: "Delivery Detials",
+    //         dispatchType: 'ADD'
+    //     }
+    // ])
+    
+    // console.log(modalState)
+    
+    
+    const handleInitialModalDispatch = (action) => {
+        dispatch({
+            type: action.type
+        });
+    }
+
+
+
+     // <div className="items-center mx-auto">
+    //   <div className="w-64 h-32 bg-yellow-100">
+    //     <h1>Welome</h1>
+    //     <button
+    //     className="px-3 py-2 bg-blue-900 text-white w-1/3"
+    //       onClick={() =>
+    //         handleInitialModalDispatch({ type: actionType.INITIAL })
+    //       }
+    //     >
+    //       Intial
+    //     </button>
+    //     <button
+    //     className="px-3 py-2 bg-red-900 text-white w-1/3"
+    //       onClick={() =>
+    //         handleInitialModalDispatch({ type: actionType.CHANGE })
+    //       }
+    //     >
+    //       Change
+    //     </button>
+    //           <button
+
+    //               className="px-3 py-2 bg-gray-900 text-white w-1/3"
+    //       onClick={() =>
+    //         handleInitialModalDispatch({ type: actionType.SCHEDULE })
+    //       }
+    //     >
+    //       Schedule
+    //     </button>
+    //       </div>
+    //       {modalState === 'Change' ? <One /> : null}
+    //       {modalState === 'Schedule' ? <Two /> : null}
+    //       {modalState === 'Initial' && null}
+    // </div>

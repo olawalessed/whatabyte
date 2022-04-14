@@ -5,17 +5,13 @@ import Footer from './child/Footer'
 
 export default function Layout({children}) {
     return (
-      
-        <div className="">
+      <div className="">
+        
           
-            <Head>
-              <title>Whatabyte</title>
-            </Head>
-            
+        
 
-            {children}
-            <Footer />
-        </div>
-      
+        {children}
+        <Footer />
+      </div>
     );
 }

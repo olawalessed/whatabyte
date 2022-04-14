@@ -4,7 +4,7 @@ import ReactMapGl, { Marker, NavigationControl, GeolocateControl } from "react-m
 import 'mapbox-gl/dist/mapbox-gl.css'
 import Geocode from 'react-geocode'
 import { Icon } from "semantic-ui-react";
-import snack from '../../public/static/snack.svg'
+import snack from '@/public/static/snack.svg'
 
 
   const navControlStyle = {

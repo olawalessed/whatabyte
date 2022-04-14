@@ -1,6 +1,11 @@
 module.exports = {
   images: {
-    domains: ["play.google.com", "res.cloudinary.com", "developer.apple.com"],
+    domains: [
+      "play.google.com",
+      "res.cloudinary.com",
+      "developer.apple.com",
+      "images.ctfassets.net",
+    ],
   },
   env: {
     BASE_URL: process.env.BASE_URL,

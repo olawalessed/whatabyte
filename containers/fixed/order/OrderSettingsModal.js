@@ -26,7 +26,7 @@ export default function OrderSettingsModal({
     <div>
       <div className="ease-in-out transition-transform duration-700">
         <div
-          className=" w-screen min-h-screen z-10 bg-slate-700 bg-opacity-60 overflow-hidden"
+          className="w-screen min-h-screen z-10 bg-slate-700 bg-opacity-60 overflow-hidden"
           onClick={() => setShowLocationModal(!showLocationModal)}
         ></div>
         

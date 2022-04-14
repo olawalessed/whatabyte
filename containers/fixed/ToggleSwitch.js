@@ -10,14 +10,14 @@ export default function ToggleSwitch () {
       checked={enabled}
       onChange={setEnabled}
       className={`${
-        enabled ? "bg-gray-200" : "bg-gray-200"
-      } relative inline-flex items-center h-12 w-40 rounded-full`}
+        enabled ? "bg-teal-500" : "bg-cyan-500"
+      } relative inline-flex items-center w-[152px] px-1 py-1.5 rounded-full`}
     >
       <span className="sr-only">Enable notifications</span>
       <button type="button"
         className={`${
-          enabled ? "translate-x-14" : "translate-x-1"
-        } inline-block px-5 h-10 transform bg-white rounded-full`}
+          enabled ? "translate-x-16 text-teal-700" : "translate-x-1 text-cyan-700"
+        } inline-block px-5 py-1.5 transform bg-white rounded-full`}
       >{enabled ? `Delivery` : `Pickup`} </button>
       </Switch>
       </div>
